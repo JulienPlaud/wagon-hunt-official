@@ -1,5 +1,8 @@
 <h1>Présentation du produit</h1>
 <p>Voici le produit : <%= @product.name %> avec l'url : <%= @product.url %></p>
 <p><%= @product.tagline %></p>
+<%= link_to @product.name, product_path(@product) %>
+
+<%= link_to "Revenir à la liste produits", products_path %>
 
 

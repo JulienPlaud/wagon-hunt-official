@@ -2,9 +2,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get "/team" => "pages#team"
-  get "/products" => "products#index"
-  get "/products/:name" => "products#show"
+  resources :products
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
