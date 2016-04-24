@@ -1,7 +1,7 @@
 <h1>Retrouvez tous les nouveaux produits</h1>
 <ul>
 <% @products.each do |product| %>
-<li><%= product%></li>
+<li>Nom <%= product.name%> - URL : <%= product.url%></li>
 <% end %>
 </ul>
 

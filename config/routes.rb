@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "/team" => "pages#team"
   get "/products" => "products#index"
+  get "/products/:name" => "products#show"
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'

@@ -1,5 +1,11 @@
 class ProductsController < ApplicationController
+
   def index
-    @products = ["produit 1", "produit 2", "produit 3"]
+    @products = Product.all
   end
+
+  def show
+    @product = Product.find_by_name(params[:name])
+  end
+
 end
